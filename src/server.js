@@ -17,7 +17,7 @@ import productReviewRouter from "./apis/productsReviews/productsReviews.js"
 import createHttpError from "http-errors"
 
 const server = express()
-const port = process.env.PORT
+const port = process.env.PORT || 3001
 const publicFolderPath = join(process.cwd(), "./public")
 
 // const loggerMiddleware = (req, res, next) => {
