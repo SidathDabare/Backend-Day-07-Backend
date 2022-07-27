@@ -14,7 +14,7 @@ const productsReviewsJSONPath = join(dataFolderPath, "productsReviews.json")
 
 const productsPublicFolderPath = join(
   process.cwd(),
-  "../Backend/public/img/products"
+  "../Backend-Day-07-Backend/public/img/products"
 )
 
 export const getProducts = () => readJSON(productsJSONPath)
@@ -27,4 +27,5 @@ export const writeProductsReviews = (productReviewsArray) =>
 
 export const saveProducts = (fileName, contentAsABuffer) =>
   writeFile(join(productsPublicFolderPath, fileName), contentAsABuffer)
+
 export const getBooksReadableStream = () => createReadStream(productsJSONPath)
