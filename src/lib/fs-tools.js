@@ -27,3 +27,4 @@ export const writeProductsReviews = (productReviewsArray) =>
 
 export const saveProducts = (fileName, contentAsABuffer) =>
   writeFile(join(productsPublicFolderPath, fileName), contentAsABuffer)
+export const getBooksReadableStream = () => createReadStream(productsJSONPath)
